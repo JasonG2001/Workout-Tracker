@@ -1,0 +1,14 @@
+.container {
+  border: dashed black 2px;
+  width: 40vh;
+  height: 50vh;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.workoutName {
+  font-size: 200%;
+}
