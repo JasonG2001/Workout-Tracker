@@ -6,6 +6,7 @@ export const Input = ({ setNumber }) => {
       <span className="setNumber">{setNumber}</span>
       <input type="2kg" className="weight" />
       <input type="5" className="reps" />
+      <button className="complete">{"\u2713"}</button>
     </div>
   );
 };
