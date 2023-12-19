@@ -61,3 +61,13 @@
   height: 70%;
   padding: 2%;
 }
+
+.addSet {
+  all: unset;
+  border: solid 0.1rem black;
+  width: 90%;
+  height: 12%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+}

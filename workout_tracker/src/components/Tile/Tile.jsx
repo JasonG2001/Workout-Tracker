@@ -1,8 +1,13 @@
 import "./Tile.css";
 import { Input } from "../Input/Input.jsx";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 export const Tile = ({ handleClick, exercise }) => {
+  const [sets, setSets] = useState(0);
+  const handleAddAnotherSet = () => {
+    setSets(() => sets + 1);
+  };
   return (
     <div className="container">
       {exercise ? (
@@ -11,7 +16,12 @@ export const Tile = ({ handleClick, exercise }) => {
             <input type="text" />
           </div>
           <div className="workoutData">
-            <Input setNumber={1} />
+            {[...Array(sets).keys()].map((set) => (
+              <Input key={`Set number ${set + 1}`} setNumber={set + 1} />
+            ))}
+            <button className="addSet" onClick={() => handleAddAnotherSet()}>
+              +
+            </button>
           </div>
         </div>
       ) : (
