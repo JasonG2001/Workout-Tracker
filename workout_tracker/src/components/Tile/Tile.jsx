@@ -16,6 +16,16 @@ export const Tile = ({ handleClick, exercise }) => {
             <input type="text" />
           </div>
           <div className="workoutData">
+            {sets ? (
+              <div className="titles">
+                <div className="hashTag">#</div>
+                <div className="kg">weight</div>
+                <div className="repetitions">reps</div>
+                <div className="done">{"\u2713"}</div>
+              </div>
+            ) : (
+              <div className="placeHolder"></div>
+            )}
             {[...Array(sets).keys()].map((set) => (
               <Input key={`Set number ${set + 1}`} setNumber={set + 1} />
             ))}
