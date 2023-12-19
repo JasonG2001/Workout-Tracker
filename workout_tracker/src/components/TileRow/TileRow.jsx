@@ -5,13 +5,16 @@ import PropTypes from "prop-types";
 export const TileRow = ({ handleClick, tileState }) => {
   return (
     <div className="tileRow">
-      {tileState.map((exercise, key) => (
-        <Tile
-          key={`Tile ${key + 1}`}
-          handleClick={handleClick}
-          exercise={exercise}
-        />
-      ))}
+      {tileState
+        .slice(0)
+        .reverse()
+        .map((exercise, key) => (
+          <Tile
+            key={`Tile ${key + 1}`}
+            handleClick={handleClick}
+            exercise={exercise}
+          />
+        ))}
     </div>
   );
 };
