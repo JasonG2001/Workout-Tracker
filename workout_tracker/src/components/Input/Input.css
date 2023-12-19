@@ -20,6 +20,10 @@
   border-radius: 0.3rem;
 }
 
+.complete {
+  cursor: pointer;
+}
+
 .weight,
 .reps {
   width: 40%;

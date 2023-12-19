@@ -19,9 +19,13 @@ export const Tile = ({ handleClick, exercise }) => {
             {[...Array(sets).keys()].map((set) => (
               <Input key={`Set number ${set + 1}`} setNumber={set + 1} />
             ))}
-            <button className="addSet" onClick={() => handleAddAnotherSet()}>
-              +
-            </button>
+            {sets === 5 ? (
+              <div className="placeHolder"></div>
+            ) : (
+              <button className="addSet" onClick={() => handleAddAnotherSet()}>
+                +
+              </button>
+            )}
           </div>
         </div>
       ) : (
