@@ -8,6 +8,9 @@ export const Tile = ({ handleClick, exercise }) => {
   const handleAddAnotherSet = () => {
     setSets(() => sets + 1);
   };
+  const handleSubtractAnotherSet = () => {
+    setSets(() => sets - 1);
+  };
   return (
     <div className="container">
       {exercise ? (
@@ -32,18 +35,27 @@ export const Tile = ({ handleClick, exercise }) => {
             {sets === 5 ? (
               <div className="placeHolder"></div>
             ) : (
-              <button className="addSet" onClick={() => handleAddAnotherSet()}>
-                +
-              </button>
+              <div className="plusMinus">
+                <button
+                  className="addSet"
+                  onClick={() => handleAddAnotherSet()}
+                >
+                  +
+                </button>
+                <button
+                  className="subtractSet"
+                  onClick={() => handleSubtractAnotherSet()}
+                >
+                  -
+                </button>
+              </div>
             )}
           </div>
         </div>
       ) : (
-        <div className="addAnotherContainer">
-          <button className="addAnother" onClick={() => handleClick()}>
-            +
-          </button>
-        </div>
+        <button className="addAnother" onClick={() => handleClick()}>
+          +
+        </button>
       )}
     </div>
   );
