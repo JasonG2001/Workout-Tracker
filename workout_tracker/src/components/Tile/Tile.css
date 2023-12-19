@@ -1,0 +1,71 @@
+.container {
+  border: dashed green 2px;
+  width: 15rem;
+  height: 40vh;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  margin: 2%;
+  background-color: white;
+}
+
+.addAnother {
+  all: unset;
+  font-size: 5rem;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: dashed green 0.3rem;
+  border-radius: 50%;
+}
+
+.addAnother:hover {
+  transform: scale(1.2);
+}
+
+.workoutContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.workoutName {
+  font-size: 200%;
+  height: 20%;
+  width: 100%;
+}
+
+.workoutName input {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 80%;
+}
+
+.workoutData {
+  width: 120%;
+  height: 70%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titles {
+  width: 89%;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  margin-bottom: 2%;
+  font-weight: bold;
+}

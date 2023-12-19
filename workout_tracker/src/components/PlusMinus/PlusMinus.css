@@ -1,0 +1,19 @@
+.plusMinus {
+  display: flex;
+  width: 100%;
+  height: 12%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+
+.plusMinus button {
+  all: unset;
+  border: solid 0.1rem black;
+  width: 45%;
+  height: 100%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
