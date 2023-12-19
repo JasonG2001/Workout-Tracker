@@ -1,5 +1,6 @@
 import "./Tile.css";
 import { Input } from "../Input/Input.jsx";
+import { PlusMinus } from "../PlusMinus/PlusMinus.jsx";
 import PropTypes from "prop-types";
 import { useState } from "react";
 
@@ -32,24 +33,10 @@ export const Tile = ({ handleClick, exercise }) => {
             {[...Array(sets).keys()].map((set) => (
               <Input key={`Set number ${set + 1}`} setNumber={set + 1} />
             ))}
-            {sets === 5 ? (
-              <div className="placeHolder"></div>
-            ) : (
-              <div className="plusMinus">
-                <button
-                  className="addSet"
-                  onClick={() => handleAddAnotherSet()}
-                >
-                  +
-                </button>
-                <button
-                  className="subtractSet"
-                  onClick={() => handleSubtractAnotherSet()}
-                >
-                  -
-                </button>
-              </div>
-            )}
+            <PlusMinus
+              handleAdd={handleAddAnotherSet}
+              handleSubtract={handleSubtractAnotherSet}
+            />
           </div>
         </div>
       ) : (
