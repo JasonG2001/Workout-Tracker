@@ -2,7 +2,7 @@ import { Tile } from "../Tile/Tile.jsx";
 import "./TileRow.css";
 
 export const TileRow = () => {
-  const slots = 4;
+  const slots = 1;
 
   return (
     <div className="tileRow">
