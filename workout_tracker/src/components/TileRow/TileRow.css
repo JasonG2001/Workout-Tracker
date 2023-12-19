@@ -1,0 +1,8 @@
+.tileRow {
+  border: solid black 0.2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  justify-content: center;
+}

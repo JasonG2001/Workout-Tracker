@@ -1,8 +1,8 @@
 import "./App.css";
-import { Tile } from "./components/Tile/Tile.jsx";
+import { TileRow } from "./components/TileRow/TileRow.jsx";
 
-function App() {
-  return <Tile />;
-}
+const App = () => {
+  return <TileRow />;
+};
 
 export default App;

@@ -1,5 +1,5 @@
 import "./Tile.css";
-import { Input } from "../Input/Input";
+import { Input } from "../Input/Input.jsx";
 
 export const Tile = () => {
   return (

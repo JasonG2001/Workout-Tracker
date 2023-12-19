@@ -1,4 +1,4 @@
-import "./input.css";
+import "./Input.css";
 import PropTypes from "prop-types";
 
 export const Input = ({ setNumber }) => {
