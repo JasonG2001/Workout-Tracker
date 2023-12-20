@@ -36,6 +36,7 @@ export const Tile = ({ handleClick, exercise }) => {
             <PlusMinus
               handleAdd={handleAddAnotherSet}
               handleSubtract={handleSubtractAnotherSet}
+              numberOfSets={sets}
             />
           </div>
         </div>

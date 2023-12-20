@@ -10,10 +10,11 @@
 .plusMinus button {
   all: unset;
   border: solid 0.1rem black;
-  width: 45%;
+  width: 100%;
   height: 100%;
   font-size: 1.4rem;
   font-weight: bold;
   border-radius: 0.4rem;
   cursor: pointer;
+  margin: 2%;
 }
