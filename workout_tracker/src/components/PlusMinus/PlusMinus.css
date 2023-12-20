@@ -18,3 +18,11 @@
   cursor: pointer;
   margin: 2%;
 }
+
+.addSet:hover {
+  background-color: #69c1f0;
+}
+
+.subtractSet:hover {
+  background-color: #e35d5d;
+}

@@ -6,7 +6,7 @@ export const Input = ({ setNumber }) => {
   const [backgroundColor, setBackgroundColor] = useState("transparent");
   const handleCheck = () => {
     const newBackgroundColor =
-      backgroundColor === "transparent" ? "#84e88e" : "transparent";
+      backgroundColor === "transparent" ? "#45fa3c" : "transparent";
     setBackgroundColor(() => newBackgroundColor);
   };
   return (

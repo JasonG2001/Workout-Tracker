@@ -1,5 +1,5 @@
 .container {
-  border: dashed green 2px;
+  border: dashed #052be8 0.2rem;
   width: 15rem;
   height: 40vh;
   border-radius: 1rem;
@@ -8,7 +8,7 @@
   justify-content: center;
   padding: 2%;
   margin: 2%;
-  background-color: white;
+  background-color: #8288a8;
 }
 
 .addAnother {
@@ -20,12 +20,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border: dashed green 0.3rem;
-  border-radius: 50%;
 }
 
 .addAnother:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 .workoutContainer {
@@ -48,6 +46,8 @@
   width: 100%;
   text-align: center;
   font-size: 80%;
+  border: #052be8 solid 0.1rem;
+  border-radius: 0.5rem;
 }
 
 .workoutData {
