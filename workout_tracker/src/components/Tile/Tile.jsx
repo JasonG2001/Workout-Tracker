@@ -12,6 +12,7 @@ export const Tile = ({ handleClick, exercise }) => {
   const handleSubtractAnotherSet = () => {
     setSets(() => sets - 1);
   };
+
   return (
     <div className="container">
       {exercise ? (

@@ -18,7 +18,7 @@
   margin-left: 2%;
   margin-right: 2%;
   padding: 2.5%;
-  border: solid black 0.1rem;
+  border: solid rgb(197, 194, 192) 0.07rem;
   border-radius: 0.3rem;
 }
 
@@ -27,17 +27,17 @@
 }
 
 .complete:hover {
-  background-color: #45fa3c;
+  background-color: rgba(129, 247, 94, 0.6);
 }
 
 .weight,
 .reps {
   width: 40%;
   margin: 1%;
-  padding: 1.5%;
+  padding: 2.5%;
   border-radius: 0.3rem;
   text-align: center;
   background-color: transparent;
-  font-size: 1.3rem;
-  border: black solid 0.1rem;
+  font-size: 1rem;
+  border: rgb(197, 194, 192) solid 0.07rem;
 }
