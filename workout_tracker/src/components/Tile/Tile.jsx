@@ -17,6 +17,9 @@ export const Tile = ({ handleClick, exercise }) => {
     <div className="container">
       {exercise ? (
         <div className="workoutContainer">
+          <div className="topBar">
+            <button className="removeWorkout">Del Workout</button>
+          </div>
           <div className="workoutName">
             <input type="text" />
           </div>

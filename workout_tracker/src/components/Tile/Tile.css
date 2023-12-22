@@ -71,3 +71,27 @@
   justify-content: space-between;
   margin-bottom: 2%;
 }
+
+.topBar {
+  width: 100%;
+  margin: 5%;
+  justify-content: right;
+  display: flex;
+}
+
+.removeWorkout {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  border: rgb(197, 194, 192) solid 0.07rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.removeWorkout:hover {
+  background-color: #e35d5d;
+}

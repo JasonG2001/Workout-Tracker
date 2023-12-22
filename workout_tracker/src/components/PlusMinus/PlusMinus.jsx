@@ -8,7 +8,7 @@ export const PlusMinus = ({ handleAdd, handleSubtract, numberOfSets }) => {
         <button className="addSet" onClick={() => handleAdd()}>
           +
         </button>
-      ) : numberOfSets === 5 ? (
+      ) : numberOfSets === 4 ? (
         <button className="subtractSet" onClick={() => handleSubtract()}>
           -
         </button>
