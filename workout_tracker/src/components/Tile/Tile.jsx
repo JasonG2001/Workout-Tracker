@@ -4,7 +4,7 @@ import { PlusMinus } from "../PlusMinus/PlusMinus.jsx";
 import PropTypes from "prop-types";
 import { useState } from "react";
 
-export const Tile = ({ handleClick, exercise }) => {
+export const Tile = ({ handleClick, exercise, subtractWorkout }) => {
   const [sets, setSets] = useState(0);
   const handleAddAnotherSet = () => {
     setSets(() => sets + 1);
@@ -18,7 +18,9 @@ export const Tile = ({ handleClick, exercise }) => {
       {exercise ? (
         <div className="workoutContainer">
           <div className="topBar">
-            <button className="removeWorkout">Del Workout</button>
+            <button className="removeWorkout" onClick={() => subtractWorkout()}>
+              Del Workout
+            </button>
           </div>
           <div className="workoutName">
             <input type="text" />
@@ -56,4 +58,5 @@ export const Tile = ({ handleClick, exercise }) => {
 Tile.propTypes = {
   exercise: PropTypes.string,
   handleClick: PropTypes.func,
+  subtractWorkout: PropTypes.func,
 };

@@ -2,7 +2,7 @@ import { Tile } from "../Tile/Tile.jsx";
 import "./TileRow.css";
 import PropTypes from "prop-types";
 
-export const TileRow = ({ handleClick, tileState }) => {
+export const TileRow = ({ handleClick, tileState, subtractWorkout }) => {
   return (
     <div className="tileRow">
       {tileState
@@ -13,6 +13,7 @@ export const TileRow = ({ handleClick, tileState }) => {
             key={`Tile ${key + 1}`}
             handleClick={handleClick}
             exercise={exercise}
+            subtractWorkout={subtractWorkout}
           />
         ))}
     </div>
@@ -22,4 +23,5 @@ export const TileRow = ({ handleClick, tileState }) => {
 TileRow.propTypes = {
   tileState: PropTypes.array,
   handleClick: PropTypes.func,
+  subtractWorkout: PropTypes.func,
 };
